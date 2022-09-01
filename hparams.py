@@ -16,7 +16,7 @@ class create_hparams():
     # Experiment Parameters        #
     ################################
     epochs = 100
-    iters_per_checkpoint = 500
+    iters_per_checkpoint = 300
     seed= 1234
     dynamic_loss_scaling = True
     fp16_run = False
@@ -31,8 +31,8 @@ class create_hparams():
     # Data Parameters             #
     ################################
     load_mel_from_disk = False
-    training_files = 'filelists/transcript_train.txt'
-    validation_files = 'filelists/transcript_val.txt'
+    training_files = 'filelists/ljs_audio_text_train_filelist.txt'
+    validation_files = 'filelists/ljs_audio_text_val_filelist.txt'
     text_cleaners = ['japanese_cleaners']
 
     ################################
@@ -86,7 +86,7 @@ class create_hparams():
     learning_rate = 1e-3
     weight_decay = 1e-6
     grad_clip_thresh = 1.0
-    batch_size = 64
+    batch_size = 8
     mask_padding = True  # set model's padded outputs to padded values
 
 
