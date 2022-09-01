@@ -1,6 +1,6 @@
 pillow
 matplotlib
-numpy==1.22.4
+numpy==1.16.2
 inflect
 librosa
 denoiser
@@ -12,3 +12,5 @@ openjtalk>=0.3.0.dev2
 janome
 torch
 tensorboardX
+tensorflow==1.15.2
+pyopenjtalk==0.2.0
