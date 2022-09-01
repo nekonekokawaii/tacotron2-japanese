@@ -33,7 +33,7 @@ class create_hparams():
     load_mel_from_disk = False
     training_files = 'filelists/ljs_audio_text_train_filelist.txt'
     validation_files = 'filelists/ljs_audio_text_val_filelist.txt'
-    text_cleaners = ['japanese_cleaners']
+    text_cleaners = ['english_cleaners']
 
     ################################
     # Audio Parameters             #
